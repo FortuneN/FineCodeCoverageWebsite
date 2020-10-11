@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+
 
 # Fine Code Coverage - Visual Studio Extension
 
