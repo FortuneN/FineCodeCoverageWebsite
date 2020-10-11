@@ -102,10 +102,10 @@
       </li>
       <li>
         <div class="card">
-          <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="">
+          <img src="images/Options-Global.png" alt="">
           <div class="card-content">
-            <h3 class="card-title">Tech Marketing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            <h3 class="card-title heading2">Global (Shared) options</h3>
+            <p>Local (Project) options (override globals in your csproj/vbproj : OPTIONAL).</p>
           </div>
         </div>
       </li>
@@ -115,7 +115,50 @@
   <!-- Section C -->
   <section id="section-c" class="grid">
     <div class="content-wrap">
-      <h2 class="content-title">We handle all of your digital needs</h2>
+      <h2 class="content-title ">Features</h2>
+      <p><code>
+        <PropertyGroup Label="FineCodeCoverage">
+          <Exclude>
+            [ThirdParty.*]*
+            [FourthParty]*
+          </Exclude>
+          <Include>
+            [*]*
+          </Include>
+          <IncludeDirectory>
+            C:\MyLibs
+          </IncludeDirectory>
+          <ExcludeByFile>
+            Migrations/**.cs
+            Utilities/**.cs
+          </ExcludeByFile>
+          <ExcludeByAttribute>
+            GeneratedCode
+            CompilerGenerated
+          </ExcludeByAttribute>
+          <IncludeTestAssembly>
+            False
+          </IncludeTestAssembly>
+        </PropertyGroup>
+      </code> .</p>
+      <h3>Options</h3>
+      <p><code>
+        Exclude                 Filter expressions to exclude specific modules and types (multiple values)
+Include                 Filter expressions to include specific modules and types (multiple values)
+IncludeDirectory        Include directories containing additional assemblies to be instrumented (multiple values)
+ExcludeByFile           Glob patterns specifying source files to exclude e.g. Migrations/**.cs (multiple values)
+ExcludeByAttribute      Attributes to exclude from code coverage (multiple values)
+IncludeTestAssembly     Specifies whether to report code coverage of the test assembly
+
+Both 'Exclude' and 'Include' options can be used together but 'Exclude' takes precedence.
+
+You can ignore a method or an entire class from code coverage by creating and applying the [ExcludeFromCodeCoverage] attribute present in the System.Diagnostics.CodeAnalysis namespace.
+You can also ignore additional attributes by adding to the 'ExcludeByAttributes' list (short name or full name supported) e.g. :
+[GeneratedCode] => Present in System.CodeDom.Compiler namespace
+[CompilerGenerated] => Present in System.Runtime.CompilerServices namespace
+[CustomExcludeFromCodeCoverage] => Any custom attribute that you may define
+      </code></p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
     </div>
   </section>
@@ -125,10 +168,10 @@
     <div class="box">
       <h2 class="content-title">Contact Us</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
-      <p>contact@acmewebsolutions.test</p>
+      <p>fortunengwenya@gmail.com</p>
     </div>
     <div class="box">
-      <h2 class="content-title">About Our Company</h2>
+      <h2 class="content-title">About Fine code Coverage</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut suscipit amet temporibus quo?</p>
     </div>
   </section>
@@ -136,6 +179,6 @@
 
 <!-- Footer -->
 <footer id="main-footer" class="grid">
-  <div>Acme Web Solutions</div>
-  <div>Project By <a href="http://traversymedia.com" target="_blank">Traversy Media</a></div>
+  <div>Watoli pty</div>
+  <div>Project By <a href="http://watoli.com" target="_blank">Watoli Pty</a></div>
 </footer>
