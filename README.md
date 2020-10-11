@@ -48,7 +48,7 @@ Go to Visual studio market place to download the Fine code Coverage [FineCode Co
 - LinkedIn: [Tendai Nyandoro](https://www.linkedin.com/in/tendai-nyandoro-a8060826/)
 
 
-**Author2**
+👤**Author2**
 
 - GitHub: [@Fortune Ngwenya](https://github.com/FortuneN)
 - LinkedIn: [Fortune Ngwenya](https://www.linkedin.com/in/fortune-ngwenya-41572611/)
