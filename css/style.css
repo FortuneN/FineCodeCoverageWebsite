@@ -84,6 +84,12 @@ p {
 
 /* Section B */
 
+.heading2 {
+font-size: 1em;
+font-weight: 600;
+color: darkblue;
+}
+
 #section-b {
   padding: 2em 1em 1em;
 }
