@@ -1,28 +1,184 @@
-<p><strong>NOTE::</strong>
-At the moment the extension supports only .NET Core applications and not .NET Framework ones.</p>
-<p><strong>FEEDBACK AND IDEAS ARE WELCOME. <a href="https://github.com/FortuneN/FineCodeCoverage/issues">Click here to let me know</a></strong></p>
-<h2 id="highlights-unit-test-code-coverage">Highlights unit test code coverage</h2>
-<p>Run a(some) unit test(s) and ...</p>
-<h4 id="get-highlights-on-the-code-being-tested">Get highlights on the code being tested</h4>
-<p><img src="https://raw.githubusercontent.com/FortuneN/FineCodeCoverage/master/Art/preview-subject.png" alt="Code Being Tested"></p>
-<h4 id="get-highlights-on-the-code-doing-the-testing">Get highlights on the code doing the testing</h4>
-<p><img src="https://raw.githubusercontent.com/FortuneN/FineCodeCoverage/master/Art/preview-test.png" alt="Code Doing The Testing"></p>
-<h4 id="see-coverage-view">See Coverage View</h4>
-<p><img src="https://raw.githubusercontent.com/FortuneN/FineCodeCoverage/master/Art/Output-Coverage.png" alt="Coverage View"></p>
-<h4 id="see-summary-view">See Summary View</h4>
-<p><img src="https://raw.githubusercontent.com/FortuneN/FineCodeCoverage/master/Art/Output-Summary.png" alt="Summary View"></p>
-<h4 id="see-risk-hotspots-view">See Risk Hotspots View</h4>
-<p><img src="https://raw.githubusercontent.com/FortuneN/FineCodeCoverage/master/Art/Output-RiskHotspots.png" alt="Risk Hotspots View"></p>
-<h2 id="contribute">Contribute</h2>
-<p>Check out the <a href="https://raw.githubusercontent.com/FortuneN/FineCodeCoverage/master/CONTRIBUTING.md">contribution guidelines</a>
-if you want to contribute to this project.</p>
-<p>For cloning and building this project yourself, make sure
-to install the
-<a href="https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6">Extensibility Tools 2015</a>
-extension for Visual Studio which enables some features
-used by this project.</p>
-<h2 id="license">License</h2>
-<p><a href="https://raw.githubusercontent.com/FortuneN/FineCodeCoverage/master/LICENSE">Apache 2.0</a></p>
-<h2 id="buy-me-a-beer-maybe-">Buy me a beer (maybe)</h2>
-<p>If you find this plugin useful, perhaps you can buy me a beer :)</p>
-<p><a href="https://paypal.me/FortuneNgwenya"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png"></a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fine Code Coverage</title>
+
+  <!-- bootstrap -->
+<!-- CSS only -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/fddcccfd38.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+  <div class="social-nav d-none d-md-block">
+    <ul class="nav nav-dark bg-dark justify-content-end">
+      <li class="nav-item">
+        <a href="https://github.com/FortuneN/FineCodeCoverage" class="nav-link" aria-label="github"><i class="fab fa-github text-white"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/fortune-ngwenya-41572611/" class="nav-link" aria-label="linkedin"><i class="fab fa-linkedin text-white"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-white" href="#">English</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="https://marketplace.visualstudio.com/items?itemName=FortuneNgwenya.FineCodeCoverage">Market Place</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white mr-5" href="#">Logout</a>
+      </li>
+    </ul>
+  </div>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light justify-content-end">
+    <a class="navbar-brand" href="#"><img src="images/logo.Default" alt="" class="w-50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+      </div>
+    </div>
+  </nav>
+ <!-- Header Showcase -->
+<header id="showcase" class="grid">
+  <div class="bg-image"></div>
+  <div class="content-wrap">
+    <h1>FineCodeCoverage</h1>
+    <p>Fine Code Coverage is a Visual Studio Extension thats meant to help you with Visual Unit Testing.</p>
+    <a href="#section-b" class="btn">Read More</a>
+  </div>
+</header>
+
+<!-- Main Area -->
+<main id="main">
+  <!-- Section A -->
+  <section id="section-a" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">Get highlights on the code being tested</h2>
+      <div class="content-text">
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section B -->
+  <section class="container-fluid" id="section-b" class="grid">
+    <ul>
+      <li>
+        <div class="card">
+          <img src="/images/preview-subject.png" alt="">
+          <div class="card-content">
+            <h3 class="card-title heading2">Highlights on Specific Code being tested</h3>
+            <p> You can run a(some) unit test(s) and Fine code Coverage gives you a clear display of the code being tested ..</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="images/Output-Coverage.png" alt="">
+          <img src="images/Output-RiskHotspots.png" alt="">
+          <div class="card-content"></div>
+            <h3 class="card-title heading2">See Coverage View</h3>
+            <p>See a clear code coverage view in a progress bar and percentages in clear color formatsS.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="images/Options-Global.png" alt="">
+          <div class="card-content">
+            <h3 class="card-title heading2">Global (Shared) options</h3>
+            <p>Local (Project) options (override globals in your csproj/vbproj : OPTIONAL).</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section C -->
+  <section id="section-c" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title ">Features</h2>
+      <p><code>
+        <PropertyGroup Label="FineCodeCoverage">
+          <Exclude>
+            [ThirdParty.*]*
+            [FourthParty]*
+          </Exclude>
+          <Include>
+            [*]*
+          </Include>
+          <IncludeDirectory>
+            C:\MyLibs
+          </IncludeDirectory>
+          <ExcludeByFile>
+            Migrations/**.cs
+            Utilities/**.cs
+          </ExcludeByFile>
+          <ExcludeByAttribute>
+            GeneratedCode
+            CompilerGenerated
+          </ExcludeByAttribute>
+          <IncludeTestAssembly>
+            False
+          </IncludeTestAssembly>
+        </PropertyGroup>
+      </code> .</p>
+      <h3>Options</h3>
+      <p><code>
+        Exclude                 Filter expressions to exclude specific modules and types (multiple values)
+Include                 Filter expressions to include specific modules and types (multiple values)
+IncludeDirectory        Include directories containing additional assemblies to be instrumented (multiple values)
+ExcludeByFile           Glob patterns specifying source files to exclude e.g. Migrations/**.cs (multiple values)
+ExcludeByAttribute      Attributes to exclude from code coverage (multiple values)
+IncludeTestAssembly     Specifies whether to report code coverage of the test assembly
+
+Both 'Exclude' and 'Include' options can be used together but 'Exclude' takes precedence.
+
+You can ignore a method or an entire class from code coverage by creating and applying the [ExcludeFromCodeCoverage] attribute present in the System.Diagnostics.CodeAnalysis namespace.
+You can also ignore additional attributes by adding to the 'ExcludeByAttributes' list (short name or full name supported) e.g. :
+[GeneratedCode] => Present in System.CodeDom.Compiler namespace
+[CompilerGenerated] => Present in System.Runtime.CompilerServices namespace
+[CustomExcludeFromCodeCoverage] => Any custom attribute that you may define
+      </code></p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+    </div>
+  </section>
+
+  <!-- Section D -->
+  <section id="section-d" class="grid">
+    <div class="box">
+      <h2 class="content-title">Contact Us</h2>
+      <p>Contact me via email for any questions or go to our guthub page for any contributions</p>
+      <p>fortunengwenya@gmail.com</p>
+    </div>
+    <div class="box">
+      <h2 class="content-title">About Fine code Coverage</h2>
+      <p>Fine code coverage is a Visual studio Extension developed to help you with visual unit testing</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer id="main-footer" class="grid">
+  <div>Watoli pty</div>
+  <div>Project By <a href="http://watoli.com" target="_blank">Watoli Pty</a></div>
+</footer>
