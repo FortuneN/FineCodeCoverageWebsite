@@ -141,6 +141,16 @@ color: darkblue;
 
 /* Footer */
 
+.content-title,
+.content-p {
+text-align: center;
+}
+
+.content-title{
+  color:#1FC5C9;
+  font-size: xx-large;
+}
+
 #main-footer {
   padding: 2em;
   background: #000;
