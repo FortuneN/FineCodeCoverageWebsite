@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="highlights, code coverage, unit testing, free, Visual Studio Community Edition">
-  <meta name="keywords" content="Visualize, unit test, code coverage, easily, free, Visual Studio Community Edition, other editions">
-  <title>Fine Code Coverage</title>
-
- body { font-family: verdana; }
-
-.tl { position: absolute; top:   0; left:   0; right: 50%; bottom: 50%; border: 8px solid black; opacity:0.4; 
-border-right-width: 4px;
-border-bottom-width: 4px;
-background-image: url("https://github.com/FortuneN/FineCodeCoverage/raw/master/Art/preview-subject.png"); }
-
-.tr { position: absolute; top:   0; left: 50%; right:   0; bottom: 50%; border: 8px solid black; opacity:0.4; 
-border-left-width: 4px;
-border-bottom-width: 4px;
-background-image: url("https://github.com/FortuneN/FineCodeCoverage/raw/master/Art/Options-Global.png"); }
-
-.bl { position: absolute; top: 50%; left:   0; right: 50%; bottom: 0  ; border: 8px solid black; opacity:0.4; 
-border-right-width: 4px;
-border-top-width: 4px;
-background-image: url("https://github.com/FortuneN/FineCodeCoverage/raw/master/Art/Output-Coverage.png"); }
-
-.br { position: absolute; top: 50%; left: 50%; right:   0; bottom: 0  ; border: 8px solid black; opacity:0.4; 
-border-left-width: 4px;
-border-top-width: 4px;
-background-image: url("https://github.com/FortuneN/FineCodeCoverage/raw/master/Art/Output-Summary.png"); }
-
-.ct {
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  background: white;
-  text-align: center;
-  position: absolute;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border:6px solid gray;
-  transform: translate(-50%, -50%);
-}
-.link
-{
-  width: 60px;
-  margin: 3px;
-  height: 60px;
-  cursor: pointer;
-  border-radius: 50%;
-  text-align: center;
-  display: inline-block;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border: 2px solid gainsboro;
-}
-.link:hover {
-  border: 2px solid darkgray;
-}
-  
-</head>
-
-<body>
-`<div class="tl"></div>
-<div class="tr"></div>
-<div class="bl"></div>
-<div class="br"></div>
-<div class="ct">
-  <div style="font-size: 10pt;font-weight: bold;margin-top:30px">
-    <img src="https://fortunengwenya.gallerycdn.vsassets.io/extensions/fortunengwenya/finecodecoverage/1.1.10/1604986383030/Microsoft.VisualStudio.Services.Icons.Default" />
-  </div>
-  <div style="font-size: 23pt;font-weight: bold;margin-top:15px">
-    Fine Code Coverage
-  </div>
-  <div style="margin-top:20px;font-size: 10pt;">
-    Visualize unit test code coverage easily for free in Visual Studio Community Edition (and other editions too)
-  </div>
-  <div style="margin-top:20px;font-size: 10pt">
-    <a class="link" alt="YouTube" href="">
-      <img src="https://1000logos.net/wp-content/uploads/2017/05/New-YouTube-logo.jpg" style="margin-top:15px;height:30px" />
-    </a>
-    <a class="link" alt="GitHub" target="_blank" href="https://github.com/FortuneN/FineCodeCoverage">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="margin-top:15px;height:30px" />
-    </a>
-    <a class="link" alt="Visual Studio Market Place" target="_blank" href="https://marketplace.visualstudio.com/items?itemName=FortuneNgwenya.FineCodeCoverage">
-      <img src="https://visualstudio.microsoft.com/wp-content/uploads/2019/06/BrandVisualStudioWin2019-3.svg" style="margin-top:15px;height:30px" />
-    </a>
-  </div>
-</div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="highlights, code coverage, unit testing, free, Visual Studio Community Edition">
+		<meta name="keywords" content="Visualize, unit test, code coverage, easily, free, Visual Studio Community Edition, other editions">
+		<title>Fine Code Coverage</title>
+		body
+    {
+      border: 0;
+      margin: 0;  
+      paddding: 0;
+      font-family: verdana;
+    }
+		.tl {
+      position: absolute; top:   0; left:   0; right: 50%; bottom: 50%; border: 8px solid black; opacity:0.4; 
+		  border-right-width: 4px;
+		  border-bottom-width: 4px;
+		  background-image: url("https://github.com/FortuneN/FineCodeCoverage/raw/master/Art/preview-subject.png");
+    }
+		.tr {
+      position: absolute; top:   0; left: 50%; right:   0; bottom: 50%; border: 8px solid black; opacity:0.4; 
+		  border-left-width: 4px;
+		  border-bottom-width: 4px;
+		  background-image: url("https://github.com/FortuneN/FineCodeCoverage/raw/master/Art/Options-Global.png");
+    }
+		.bl {
+      position: absolute; top: 50%; left:   0; right: 50%; bottom: 0  ; border: 8px solid black; opacity:0.4; 
+		  border-right-width: 4px;
+		  border-top-width: 4px;
+		  background-image: url("https://github.com/FortuneN/FineCodeCoverage/raw/master/Art/Output-Coverage.png");
+    }
+		.br {
+      position: absolute; top: 50%; left: 50%; right:   0; bottom: 0  ; border: 8px solid black; opacity:0.4; 
+		  border-left-width: 4px;
+		  border-top-width: 4px;
+		  background-image: url("https://github.com/FortuneN/FineCodeCoverage/raw/master/Art/Output-Summary.png");
+    }
+		.ct {
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 400px;
+      background: white;
+      text-align: center;
+      position: absolute;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border:6px solid gray;
+      transform: translate(-50%, -50%);
+		}
+		.link
+		{
+      width: 60px;
+      margin: 3px;
+      height: 60px;
+      cursor: pointer;
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border: 2px solid gainsboro;
+		}
+		.link:hover {
+		  border: 2px solid darkgray;
+		}
+	</head>
+	<body>
+		<div class="tl"></div>
+		<div class="tr"></div>
+		<div class="bl"></div>
+		<div class="br"></div>
+		<div class="ct">
+			<div style="font-size: 10pt;font-weight: bold;margin-top:30px">
+				<img src="https://fortunengwenya.gallerycdn.vsassets.io/extensions/fortunengwenya/finecodecoverage/1.1.10/1604986383030/Microsoft.VisualStudio.Services.Icons.Default" />
+			</div>
+			<div style="font-size: 23pt;font-weight: bold;margin-top:15px">
+				Fine Code Coverage
+			</div>
+			<div style="margin-top:20px;font-size: 10pt;">
+				Visualize unit test code coverage easily for free in Visual Studio Community Edition (and other editions too)
+			</div>
+			<div style="margin-top:20px;font-size: 10pt">
+				<a class="link" alt="YouTube" href="">
+				<img src="https://1000logos.net/wp-content/uploads/2017/05/New-YouTube-logo.jpg" style="margin-top:15px;height:30px" />
+				</a>
+				<a class="link" alt="GitHub" target="_blank" href="https://github.com/FortuneN/FineCodeCoverage">
+				<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="margin-top:15px;height:30px" />
+				</a>
+				<a class="link" alt="Visual Studio Market Place" target="_blank" href="https://marketplace.visualstudio.com/items?itemName=FortuneNgwenya.FineCodeCoverage">
+				<img src="https://visualstudio.microsoft.com/wp-content/uploads/2019/06/BrandVisualStudioWin2019-3.svg" style="margin-top:15px;height:30px" />
+				</a>
+			</div>
+		</div>
+	</body>
 </html>
