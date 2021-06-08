@@ -2,7 +2,7 @@
 
 # Fine Code Coverage - Visual Studio Extension
 
-> This is an HTML and CSS solo project. On this HTML and CSS capstone project, I m building an online website for a solar energy event
+> This is an HTML and CSS project. On this HTML and CSS capstone project, I'm building an online website for a development tool.
 
 ![Fine Code Coverage](https://user-images.githubusercontent.com/30318155/95675494-00c91c00-0bb8-11eb-9f36-e03fe593015a.png)
 
